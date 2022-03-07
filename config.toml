@@ -1,0 +1,13 @@
+title = 'Apuntes ETSII UMA'
+theme = 'hugo-book'
+relativeURLs = true
+languageCode = 'es'
+enableGitInfo = true
+
+[markup.goldmark.renderer]
+ unsafe = true
+
+[params]
+  BookTheme = 'dark'
+  BookLogo = 'logo.svg'
+  BookRepo = 'https://github.com/pablouser1/apuntes-etsii-uma'
