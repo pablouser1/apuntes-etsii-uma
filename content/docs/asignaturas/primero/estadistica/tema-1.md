@@ -3,6 +3,15 @@ weight: 1
 ---
 
 # Tema 1 (Estadística Descriptiva)
+{{< tabs "videos" >}}
+{{< tab "Video 3.1" >}}
+{{< youtube CuTQu3iDjVE >}}
+{{< /tab >}}
+{{< tab "Video 3.2" >}}
+{{< youtube iyrvsqlrvWE >}}
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Ordenar datos
 - Menor a mayor
 - Agrupados o no ({{< katex >}}\sqrt{n}{{</ katex >}} = nº de intervalos)
@@ -287,6 +296,3 @@ Mesocúrtica: {{< katex >}}g_{2} = 0{{</ katex >}}
 Platicúrtica: {{< katex >}}g_{2} < 0{{</ katex >}}
 
 Leptocúrtica: {{< katex >}}g_{2} > 0{{</ katex >}}
-
-## Recursos
-TODO
