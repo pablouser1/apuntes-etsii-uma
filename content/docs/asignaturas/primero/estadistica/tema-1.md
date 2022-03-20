@@ -3,6 +3,9 @@ weight: 1
 ---
 
 # Tema 1 (Estadística Descriptiva)
+## Recursos
+https://aprendeconalf.es/docencia/estadistica/manual/estadistica-descriptiva/
+
 {{< tabs "videos" >}}
 {{< tab "Video 3.1" >}}
 {{< youtube CuTQu3iDjVE >}}
@@ -45,7 +48,17 @@ weight: 1
     - {{< katex >}}(160, 170]{{</ katex >}} = Despejar usando lo anterior
 
 ## Tabla de frencuencias
-| x | Freq. Absoluta<br>$$n_{i}$$ | Frecuencia relativa<br>$$f_{i}=\frac{n_{i}}{n}$$ | Frecuencia absoluta acomulada<br>$$N_{i}$$ | Frecuencia relativa acomulada<br>$$F_{i}=\frac{N_{i}}{n}$$ |
+{{< hint info >}}
+- **Frecuencia Absoluta $n_i$**: Es el número de veces que el valor $x_i$ aparece en la muestra.
+- **Frecuencia Relativa $f_i$**: Es la proporción de veces que el valor $x_i$ aparece en la muestra.
+$$f_i = \frac{n_i}{n}$$
+- **Frecuencia Absoluta Acumulada $N_i$**: Es el número de valores en la muestra menores o iguales que $x_i$.
+$$N_i = n_1 + \cdots + n_i = N_{i-1}+n_i$$
+- **Frecuencia Relativa Acumulada $F_i$**: Es la proporción de valores en la muestra menores o iguales que $x_i$.
+$$F_i = \frac{N_i}{n}$$
+{{< /hint >}}
+
+| x | $$n_{i}$$ | $$f_{i}$$ | $$N_{i}$$ | $$F_{i}$$ |
 | :---: | :---: | :---: | :---: | :---: |
 | Falda | 2 | {{< katex >}}\frac{2}{10}{{</ katex >}} | 2 | {{< katex>}}\frac{2}{10}{{</ katex >}} |
 | Chaqueta | 3 | {{< katex >}}\frac{3}{10}{{</ katex >}} | 2 + 3 | {{< katex>}}\frac{2}{10} + \frac{3}{10}{{</ katex >}} |

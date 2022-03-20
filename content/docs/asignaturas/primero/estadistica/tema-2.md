@@ -2,7 +2,10 @@
 weight: 2
 ---
 
-# Tema 2
+# Tema 2 (Modelización estadística. Regresión y correlación)
+## Recursos
+https://aprendeconalf.es/docencia/estadistica/manual/regresion/
+
 {{< tabs "videos" >}}
 {{< tab "Video 3.3" >}}
 {{< youtube Ne59233X_dc >}}
