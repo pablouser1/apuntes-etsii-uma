@@ -1,4 +1,0 @@
----
-title: "Álgebra"
-bookCollapseSection: true
----

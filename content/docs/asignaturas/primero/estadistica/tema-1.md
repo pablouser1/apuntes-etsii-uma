@@ -49,12 +49,12 @@ https://aprendeconalf.es/docencia/estadistica/manual/estadistica-descriptiva/
 
 ## Tabla de frencuencias
 {{< hint info >}}
-- **Frecuencia Absoluta $n_i$**: Es el número de veces que el valor $x_i$ aparece en la muestra.
-- **Frecuencia Relativa $f_i$**: Es la proporción de veces que el valor $x_i$ aparece en la muestra.
+- **Frecuencia Absoluta**: Es el número de veces que el valor $x_i$ aparece en la muestra.
+- **Frecuencia Relativa**: Es la proporción de veces que el valor $x_i$ aparece en la muestra.
 $$f_i = \frac{n_i}{n}$$
-- **Frecuencia Absoluta Acumulada $N_i$**: Es el número de valores en la muestra menores o iguales que $x_i$.
+- **Frecuencia Absoluta Acumulada**: Es el número de valores en la muestra menores o iguales que $x_i$.
 $$N_i = n_1 + \cdots + n_i = N_{i-1}+n_i$$
-- **Frecuencia Relativa Acumulada $F_i$**: Es la proporción de valores en la muestra menores o iguales que $x_i$.
+- **Frecuencia Relativa Acumulada**: Es la proporción de valores en la muestra menores o iguales que $x_i$.
 $$F_i = \frac{N_i}{n}$$
 {{< /hint >}}
 
@@ -285,13 +285,13 @@ $$u_{2} = \frac{(x_{i} - \bar x)^2 \cdot n_{i}}{n}$$
 Determinar la forma de cómo se distribuye la variable
 
 ### Pirson
-$$A_{p} = \frac{\bar x - M_{o}}{S}; A_{p} = \frac{3(\bar x - M_{e})}{S}$$
+$$A_{p} = \frac{\bar x - M_{o}}{S}; A_{p} = \frac{3(\bar x - M_{e})}{s}$$
 
 ### Fisher
-$$g_{1} = \frac{\sum (x_{i} - \bar x)^3 \cdot f_{i}}{S^3}$$
+$$g_{1} = \frac{\sum (x_{i} - \bar x)^3 \cdot f_{i}}{s^3}$$
 
 ### Coeficiente de aplastamiento...
-$$g_{2} = \frac{\sum(x_{i} - \bar x)^4 \cdot f_{i}}{S^4} - 3$$
+$$g_{2} = \frac{\sum(x_{i} - \bar x)^4 \cdot f_{i}}{s^4} - 3$$
 
 ### Interpretaciones (Simetría)
 {{< katex >}}A_{p} > 0{{</ katex >}} o {{< katex >}}g_{1} > 0{{</ katex >}}
