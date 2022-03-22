@@ -45,7 +45,7 @@ https://aprendeconalf.es/docencia/estadistica/manual/estadistica-descriptiva/
     - {{< katex >}}(-\infty, l_{i}){{</ katex >}}
     - {{< katex >}}(l_{i}-1, \infty){{</ katex >}}
 - Marca de clase y amplitud
-    - {{< katex >}}(160, 170]{{</ katex >}} = Despejar usando lo anterior
+    - {{< katex >}}(160, 170] \rightarrow x_i = \frac{160+170}{2}{{</ katex >}}
 
 ## Tabla de frencuencias
 {{< hint info >}}

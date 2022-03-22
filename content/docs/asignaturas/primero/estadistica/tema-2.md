@@ -72,20 +72,17 @@ No se cumple la igualdad, las variables son dependientes
 {{< katex >}}\frac{20}{60} \cdot \frac{24}{60} = \frac{P}{60} {{</ katex >}} (Las variables son independientes)
 {{< katex >}}f_{3.} \cdot f_{.4} = f_{3,4}{{</ katex >}}
 
-### Ejemplo
-_Pag 17 transparencias_
+## Covarianza
+$$s_{xy}=\frac{\sum x_iy_j}{n}-\bar{x}\bar{y}$$
 
-| x/y | -2 | -1 | 0 | 1 | 2 | $n_{x}$ | - |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 0 | 2 | 7 | 12 | 10 | 4 | 35 | y/x menor 1
-| 1 | 5 | 14 | 23 | 15 | 7 | 64 | - |
-| 2 | 12 | 31 | 23 | 8 | 3 | 77 | y/x=2
-| 3 | 20 | 18 | 8 | 2 | 1 | 49 | - |
-| $n_{y}$ | 39 | 70 | 66 | 35 | 15 | 225 = n
-| - | - | x/y = -1 | - | - |  x/y mayor 1 | - | - |
+## Recta de regresión
+### y/x
+$$y=\bar{y}+\frac{s_{xy}}{s_x^2}(x-\bar{x})$$
+### x/y
+$$x=\bar{x}+\frac{s_{xy}}{s_y^2}(y-\bar{y})$$
 
-y/x=2
-x/y=-1
-y/x menor 1
-x/y mayor 1
-x/y mayor 0
+## Coeficiente de determinación lineal
+$$r^2=\frac{s_{xy}^2}{s_x^2s_y^2}$$
+
+## Coeficiente de correlación lineal
+$$r=\frac{s_{xy}}{s_xs_y}$$
