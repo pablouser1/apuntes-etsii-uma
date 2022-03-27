@@ -35,7 +35,8 @@ Condicion variables:
 - Independientes (tabla frecuencias bidimensional en términos relativos)
 - Un poco de relación
 
-## Tabla absoluta
+## Correlación
+### Tabla absoluta
 Tabla de frecuencias absolutas (variable bidimensional)
 | x/y | 0 | 1 | $$n_{x} (n_{i}.)$$ |
 | :---: | :---: | :---: | :---: |
@@ -48,7 +49,7 @@ Tabla de frecuencias absolutas (variable bidimensional)
 
 {{< katex >}}n_{21} = 4{{</ katex >}}
 
-## Tabla relativa
+### Tabla relativa
 Tabla de frecuencias relativas (var bidimensional)
 | x/y | 0 | 1 | $$f_{x} (f_{i}.)$$ |
 | :---: | :---: | :---: | :---: |
@@ -72,17 +73,24 @@ No se cumple la igualdad, las variables son dependientes
 {{< katex >}}\frac{20}{60} \cdot \frac{24}{60} = \frac{P}{60} {{</ katex >}} (Las variables son independientes)
 {{< katex >}}f_{3.} \cdot f_{.4} = f_{3,4}{{</ katex >}}
 
-## Covarianza
+### Covarianza
 $$s_{xy}=\frac{\sum x_iy_j}{n}-\bar{x}\bar{y}$$
 
-## Recta de regresión
-### y/x
+## Regresión
+### Ajuste de mínimos cuadrados
+$$\sum (y_j - a - bx_i)^2$$
+### Lineal
+#### Recta de regresión
+##### y/x
 $$y=\bar{y}+\frac{s_{xy}}{s_x^2}(x-\bar{x})$$
-### x/y
+##### x/y
 $$x=\bar{x}+\frac{s_{xy}}{s_y^2}(y-\bar{y})$$
 
-## Coeficiente de determinación lineal
+#### Coeficiente de determinación lineal
 $$r^2=\frac{s_{xy}^2}{s_x^2s_y^2}$$
 
-## Coeficiente de correlación lineal
+#### Coeficiente de correlación lineal
 $$r=\frac{s_{xy}}{s_xs_y}$$
+
+### No lineal
+{{< youtube Jx8R4fTFjoE >}}
