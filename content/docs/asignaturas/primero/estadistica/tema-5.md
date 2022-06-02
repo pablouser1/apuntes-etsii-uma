@@ -4,7 +4,6 @@ weight: 5
 
 # Tema 5 (Variables aleatorias)
 ## Recursos
-<!---
 {{< tabs "videos" >}}
 {{< tab "Video 3.8" >}}
 {{< youtube VofLkVdpKas >}}
@@ -19,7 +18,6 @@ weight: 5
 {{< youtube Z_AmMo50U4Q >}}
 {{< /tab >}}
 {{< /tabs >}}
--->
 
 ## Introducción
 Una variable aleatoria (X) es una función que asocia cada elemento del espacio muestral un número real
