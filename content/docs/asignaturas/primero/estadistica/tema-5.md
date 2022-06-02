@@ -4,6 +4,7 @@ weight: 5
 
 # Tema 5 (Variables aleatorias)
 ## Recursos
+<!---
 {{< tabs "videos" >}}
 {{< tab "Video 3.8" >}}
 {{< youtube VofLkVdpKas >}}
@@ -18,6 +19,7 @@ weight: 5
 {{< youtube Z_AmMo50U4Q >}}
 {{< /tab >}}
 {{< /tabs >}}
+-->
 
 ## Introducción
 Una variable aleatoria (X) es una función que asocia cada elemento del espacio muestral un número real
@@ -270,3 +272,218 @@ f(x) = F'(x)
 {{</ katex >}}
 
 Lo que quiere decir que la función densidad es la derivada de la función de distribución
+
+#### Ejemplo
+Hallar la función de distribución F(x) a partir de la función densidad
+{{< katex display>}}
+f(x) = \begin{cases}
+x/2 \hspace{1cm} (0 \leq x \leq 2) \\
+0 \hspace{1cm} (resto)
+\end{cases}
+{{</ katex >}}
+
+Tenemos que definir la función a trozos:
+{{< katex display>}}
+f(x) = \begin{cases}
+0 \hspace{1cm} (-\infty \leq x \leq 0) \\
+x/2 \hspace{1cm} (0 \leq x \leq 2) \\
+0 \hspace{1cm} (x > 2) \\
+\end{cases}
+{{</ katex >}}
+
+Si {{< katex >}}-\infty < x < 0{{</ katex >}}
+{{< katex display>}}
+F(x) = \int_{-\infty}^{x} f(t) dt = \int_{-\infty}^{x} 0 dt = 0
+{{</ katex >}}
+
+Si {{< katex >}}0 \leq x \leq 2{{</ katex >}}
+{{< katex display>}}
+F(x) = F(0) + \int_{0}^{x} f(t) dt = \int_{0}^{x} \frac{t}{2} dt = \frac{x^2}{4}
+{{</ katex >}}
+
+Si {{< katex >}}x > 2 {{</ katex >}}
+{{< katex display>}}
+F(x) = F(2) + \int_{2}^{x} f(t) dt = \frac{2^2}{4} + \int_{2}^{x} 0 dt = 1
+{{</ katex >}}
+
+
+### Estadísticos poblacionales
+{{< columns >}}
+#### Media o esperanza matemática
+{{< katex display>}}
+\mu = E(X) = \int_{-\infty}^{\infty} x \cdot f(x) dx
+{{</ katex >}}
+
+<--->
+#### Varianza
+{{< katex display>}}
+\sigma^2 = Var(X) = \int_{-\infty}^{\infty} x^2 \cdot f(x) - \mu^2 dx
+{{</ katex >}}
+{{< /columns >}}
+
+#### Ejemplo
+Sea la función de densidad:
+{{< katex display>}}
+f(x) = \begin{cases}
+0 \hspace{1cm} (x < 0) \\
+e^{-x} \hspace{0.6cm} (x \geq x 0)
+\end{cases}
+{{</ katex >}}
+
+Su media es:
+{{< katex display>}}
+\mu = \int_{-\infty}^{\infty} x f(x) dx = \int_{-\infty}^{0} x f(x) dx + \int_{0}^{\infty} x f(x) dx = \cdots
+{{</ katex >}}
+
+### Distribución uniforme contínua
+Una variable aleatoria continua X, cuyo recorrido es el intervalo [a, b] sigue un modelo de distribución uniforme
+si todos los valores de la variable son equiprobables
+
+{{< katex display>}}
+f(x) = \frac{1}{b - a}
+{{</ katex >}}
+
+Su media y varianza valen:
+{{< columns >}}
+#### Media o esperanza matemática
+{{< katex display>}}
+\mu = \frac{a + b}{2}
+{{</ katex >}}
+
+<--->
+#### Varianza
+{{< katex display>}}
+\sigma^2 = \frac{(b - a)^2}{12}
+{{</ katex >}}
+{{< /columns >}}
+
+### Distribución normal
+Este modelo es el modelo de distribución contínuo más importante, ya que se suele presentar en la naturaleza
+
+Una variable continua X sigue un modelo de distribución normal {{< katex >}}N(\mu, \sigma){{</ katex >}} si su recorrido es R y su
+función de densidad vale:
+{{< katex display>}}
+f(x) = \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+{{</ katex >}}
+
+La gráfica de la función de densidad se conoce como campana de Gauss. Esta gráfica depende de dos parámetros (media y desviación típica)
+
+#### Propiedades
+- La función de densidad es simétrica respecto a la media, por lo tanto su coeficiente de asimetría es 0
+- También es mescúrtica, por lo tanto su coeficiente de apuntamiento vale 0
+- La media, la mediana y la moda coinciden
+- Tiende asintóticamente a 0 cuando x tiende a +- infinito
+- Se cumple que:
+    - {{< katex >}}P(\mu - \sigma < X \leq \mu + \sigma) = 0.68{{</ katex >}}
+    - {{< katex >}}P(\mu - 2\sigma < X \leq \mu + 2\sigma) = 0.95{{</ katex >}}
+    - {{< katex >}}P(\mu - 3\sigma < X \leq \mu + 3\sigma) = 0.99{{</ katex >}}
+
+#### Estándar o tipificada
+{{< katex display>}}
+N(0, 1)
+{{</ katex >}}
+
+Para calcularla podemos mirar la tabla tabulada
+
+#### Tipificación
+{{< katex display>}}
+X ~ N(\mu, \sigma) \rightarrow Z = \frac{X - \mu}{\sigma} ~ N(0, 1)
+{{</ katex >}}
+
+{{< hint warning >}}
+Para poder mirar en la tabla el valor tiene que ser un número positivo,
+si no es el caso tenemos que invertir la condición
+
+**Ejemplo**: P[z <= -3] = P[z >= 3]
+{{< /hint >}}
+
+##### Ejemplo
+Sea X una variable aleatoria continua con distribución normal N(60, 10) hallar:
+
+{{< katex display>}}
+\mu = 60; \sigma = 10
+{{</ katex >}}
+
+a) {{< katex >}}P[X \geq 70]{{</ katex >}}
+{{< katex display>}}
+P[Z \geq \frac{70 - 60}{10}] = P[Z \geq 1] = 0.1587
+{{</ katex >}}
+
+b) {{< katex >}}P[X \leq 80{{</ katex >}}
+{{< katex display>}}
+P[Z \leq \frac{80 - 60}{10}] = P[Z \leq 2] = 1 - P[Z > 2] = 1 - 0.0288 = 0.9772
+{{</ katex >}}
+
+c) {{< katex >}}P[X \leq 30{{</ katex >}}
+{{< katex display>}}
+P[z \leq -3] = P[z \geq 3] = 1.35 \cdot 10^{-3}
+{{</ katex >}}
+
+d) {{< katex >}}P[39 \leq X \leq 80]{{</ katex >}}
+{{< katex display>}}
+P[-2.1 \leq Z \leq 2] = P[Z \geq -2.1] - P[Z > 2] = P[Z \leq 2.1] - P[Z > 2] =
+{{</ katex >}}
+
+{{< katex display>}}
+1 - P[Z > 2.1] - P[Z > 2] = 1 - 0.0179 - 0.0228 = 0.9593
+{{</ katex >}}
+
+#### Correción de continuidad o de Yates
+Utilizamos esta corrección cuando aproximamos una distribución binomial o de poisson a una normal
+
+Esto es debido a que con distribuciones binomiales o de poisson estamos trabajando con variables aleatorias discretas y al pasar a una distribución normal estaremos trabajando con variables aleatorias continuas.
+
+**Recordatorio**: La probabilidad para valores fijos de una Variable Aleatoria Continua es cero
+
+| Binomial/Poisson | Normal |
+| :---: | :---: |
+| $$P[X \leq a]$$ | $$P[X \leq a + 0.5]$$ |
+| $$P[X < a]$$ | $$P[X \leq a - 0.5]$$ |
+| $$P[X \geq a]$$ | $$P[X \leq a - 0.5]$$ |
+| $$P[X > a]$$ | $$P[X \leq a + 0.5]$$ |
+| $$P[X = a]$$ | $$P[a - 0.5 \leq X \leq a + 0.5]$$ |
+| $$P[a \leq X \leq b]$$ | $$P[a - 0.5 \leq Y \leq a + 0.5]$$ |
+| $$P[a < X < b]$$ | $$P[a + 0.5 \leq Y \leq b - 0.5]$$ |
+
+##### Ejemplo (Aproximación de la binomial)
+Para acceder a un puesto ejecutivo, los aspirantes deben realizar un test de 100 preguntas con 5 posibles respuestas.
+Si uno de ellos contesta al azar, ¿cuál es la probabilidad de que acierte más de 25 preguntas? ¿Y menos de 30?
+
+X = Acertar
+
+n = 100 preguntas
+
+p = 1/5 = 0.2
+
+X ~ B(100, 0.2)
+
+Vamos a comprobar si reune las condiciones para poder pasarla de binomial a normal:
+- {{< katex >}}np > 5 \rightarrow 100 \cdot 0.2 = 20 > 5{{</ katex >}}
+- {{< katex >}}n(1 - p) > 5 \rightarrow 100(1 - 0.2) = 80 > 5{{</ katex >}}
+
+**Reune las condiciones**
+{{< katex display>}}
+X ~ B(100, 0.2) = N(np, \sqrt{np(1 - p)})
+{{</ katex >}}
+
+{{< katex display>}}
+X ~ B(100, 0.2) \approx N(20, 4)
+{{</ katex >}}
+
+Calculamos la prob. de acertar más de 25 preguntas:
+
+Tenemos que aplicar la corrección de continuidad y después tipificar
+{{< katex display>}}
+P[X > 25] = P[Y \geq 25 + 0.5] = P[Y \geq 25.5] = P[Z \geq \frac{25.5 - 20}{4}] = P[Z \geq 1.38] = 0.0838
+{{</ katex >}}
+
+**Un 8.38% acertaría más de 25 preguntas**
+
+Calculamos la probabilidad de acertar menos de 30 preguntas:
+
+Aplicamos el mismo procedimiento que en el apartado anterior
+{{< katex display>}}
+P[X < 30] = P[Y \leq 30 - 0.5] = P[Y \leq 29.5] = P[Z \leq \frac{29.5 - 20}{4}] = P[Z \leq 2.38] = 1 - P[Z > 2.38] = 1 - 0.0087 = 0.9913
+{{</ katex >}}
+
+**Un 99.13% acertaría menos de 30 preguntas**
