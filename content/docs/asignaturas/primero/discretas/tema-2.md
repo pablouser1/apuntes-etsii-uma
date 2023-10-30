@@ -2,7 +2,7 @@
 weight: 2
 ---
 
-# Conjuntos y recuentos
+# Conjuntos y recuento
 {{< katex >}}
 r = |A|
 {{</ katex >}}
@@ -11,6 +11,22 @@ r = |A|
 n = |B|
 {{</ katex >}}
 
+## Conjuntos
+### Funciones
+$$ f : A \Rightarrow B$$
+
+A: Dominio
+
+B: Codominio
+
+#### Imagen
+{{< youtube bVSjC4Qr0Mo >}}
+#### Tipos
+* Inyectiva, si una solución es única para una incógnita.
+* Sobreyectiva, todas las soluciones tienen una incógnita desde la cual calcularlas.
+* Biyectiva, si es inyectiva y sobreyectiva.
+
+## Recuento
 ### Tabla resumen
 | Objeto | Recipiente | ¿Pueden haber vacíos? | Solución |
 | :--: | :--: | :--: | :--: |

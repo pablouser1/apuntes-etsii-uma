@@ -24,6 +24,10 @@ El resto anterior será el mcd de a y b
 ## Ecuaciones diofánticas
 {{< youtube DuNQIsTQu9o >}}
 
+<br />
+
+{{< button href="https://www.math.uwaterloo.ca/~snburris/htdocs/linear.html" >}}Calculadora{{< /button >}}
+
 $$150x + 39y = 228$$
 
 * Aplicamos el [alg. de euclides](#algoritmo-de-euclides) para conseguir el mcd(150, 39)
@@ -42,7 +46,8 @@ $$a \equiv b \pmod{m}$$
 $$a \cdot x + m \cdot y = b$$
 
 ### Inverso
-$$[a]_{m}^{-1} = a^{\phi m}$$
+$$[a]_{m}^{-1}$$
+Para resolverlo debes aplicar Bezout con a y m
 
 ### Teorema de Brahmagupta
 $$a \equiv b \pmod{m}$$
@@ -51,6 +56,7 @@ $$a \equiv b \pmod{m}$$
 
 ## Euler-Fermat
 ### Función de Euler
+{{< button href="https://www.dcode.fr/euler-totient" >}}Calculadora{{< /button >}}
 * Si p es primo: {{< katex >}} \phi(p) = p - 1{{</ katex >}}
 * Si p no es primo: {{< katex >}} \phi(p) = p^e - p^{e - 1}{{</ katex >}}
 * Si m y n son coprimos: {{< katex >}} \phi(m, n) = \phi(m) \cdot \phi(n){{</ katex >}}
@@ -77,4 +83,6 @@ $$x \equiv 2^5 \cdot 8 \pmod{9}$$
 $$x \equiv 4 \pmod{9}$$
 
 ## Sistema de congruencias lineales
-{{< youtube xAQiFowBJ3Q >}}
+{{< youtube guvp91anBBE >}}
+
+* Para que tenga solución los módulos tienen que ser coprimos 2 a 2
